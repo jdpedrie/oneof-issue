@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package oneoferror;
+
+message Demonstration {
+    oneof test_argument {
+        string name = 4;
+        SubMessage sub_message = 9;
+    }
+
+    message SubMessage {
+        string name = 4;
+    }
+}
